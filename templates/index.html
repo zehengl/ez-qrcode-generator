@@ -17,9 +17,20 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">ez-qrcode-generator</h1>
+        <p class="lead">
+          A Python application to generate QR Code
+        </p>
+        <hr class="my-4" />
+        <p>
+          Check out the source code at
+          <a href="https://github.com/zehengl/ez-qrcode-generator">GitHub</a>
+        </p>
+      </div>
       <form method="post">
         <div class="form-group">
-          <label for="text_input">String to convert:</label>
+          <label for="text_input"><strong>Text</strong></label>
           <input
             type="text"
             id="text_input"
@@ -27,6 +38,31 @@
             class="form-control"
             placeholder="Type Something"
           />
+          <small id="text_input_examples" class="form-text text-muted">
+            <p>
+              <a
+                class="btn btn-sm btn-secondary"
+                data-toggle="collapse"
+                href="#collapse_examples"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse_examples"
+              >
+                Examples
+              </a>
+            </p>
+            <div class="collapse" id="collapse_examples">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  WIFI:T:WPA;S:<strong>_network_</strong>;P:<strong>_password_</strong>;;
+                </li>
+                <li class="list-group-item">
+                  mailto:<strong>_email_</strong>?subject=Say%20Hello%20World
+                </li>
+                <li class="list-group-item">sms:<strong>_phone_</strong></li>
+              </ul>
+            </div>
+          </small>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
