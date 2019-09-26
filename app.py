@@ -2,8 +2,10 @@ from io import BytesIO
 
 import qrcode
 from flask import Flask, render_template, request, send_file
+from whitenoise import WhiteNoise
 
 app = Flask(__name__)
+app.wsgi_app = WhiteNoise(app.wsgi_app, root="static/")
 
 
 def serve_image(img):
