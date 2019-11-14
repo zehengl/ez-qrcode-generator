@@ -1,0 +1,7 @@
+{% import "bootstrap/wtf.html" as wtf %}
+
+<form class="form form-horizontal" method="post" role="form">
+  {{ wtf.form_field(form.text_input, class="form-control", size=10) }}
+  {% include 'examples.html' %}
+  {{ wtf.form_field(form.submit, class="btn btn-primary") }}
+</form>
