@@ -1,13 +1,12 @@
 # ez-qrcode-generator
 
+![coding_style](https://img.shields.io/badge/code%20style-black-000000.svg)
+[![time tracker](https://wakatime.com/badge/github/zehengl/ez-qrcode-generator.svg)](https://wakatime.com/badge/github/zehengl/ez-qrcode-generator)
+
 ## Envrionment
 
 - Python 3.7
 - Windows 10
-
-## Coding Style
-
-![coding_style](https://img.shields.io/badge/code%20style-black-000000.svg)
 
 ## Install
 
