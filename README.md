@@ -3,6 +3,8 @@
 ![coding_style](https://img.shields.io/badge/code%20style-black-000000.svg)
 [![time tracker](https://wakatime.com/badge/github/zehengl/ez-qrcode-generator.svg)](https://wakatime.com/badge/github/zehengl/ez-qrcode-generator)
 
+A Python application to generate QR Code
+
 ## Envrionment
 
 - Python 3.7
