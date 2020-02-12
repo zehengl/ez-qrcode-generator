@@ -5,7 +5,7 @@
 
 A Python application to generate QR Code
 
-## Envrionment
+## Environment
 
 - Python 3.7
 - Windows 10
