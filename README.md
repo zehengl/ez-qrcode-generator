@@ -1,3 +1,7 @@
+<div align="center">
+    <img src="https://raw.githubusercontent.com/zehengl/ez-qrcode-generator/master/static/favicon.png" alt="logo" height="196">
+</div>
+
 # ez-qrcode-generator
 
 ![coding_style](https://img.shields.io/badge/code%20style-black-000000.svg)
