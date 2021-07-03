@@ -1,7 +1,7 @@
 ﻿Flask==2.0.1
 Flask-Bootstrap4==4.0.2
-Flask-WTF==0.14.3
+Flask-WTF==0.15.1
 gunicorn==20.1.0
-Pillow==8.2.0
-qrcode==6.1
+Pillow==8.3.0
+qrcode==7.1
 whitenoise==5.2.0
