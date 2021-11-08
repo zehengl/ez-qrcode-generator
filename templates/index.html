@@ -1,51 +1,51 @@
 {% extends "bootstrap/base.html" %}
 
+<!-- head -->
 {% block head %}
-  {{ super() }}
-  <link
-    rel="shortcut icon"
-    href="{{ url_for('static', filename='favicon.png') }}"
-  />
+<!-- super() -->
+{{ super() }}
+<link
+  rel="shortcut icon"
+  href="{{ url_for('static', filename='favicon.png') }}"
+/>
 {% endblock %}
 
+<!-- title -->
 {% block title %} ez-qrcode-generator {% endblock %}
 
+<!-- content -->
 {% block content %}
-  <div style="display: flex; min-height:100vh; flex-direction:column; flex: 1">
-    <div class="container">
-      <div class="jumbotron">
-        <h1 class="display-4">
-          <span>
-            <img
-              src="{{ url_for('static', filename='favicon.png') }}"
-              width="64"
-              height="64"
-            />
-          </span>
-          ez-qrcode-generator
-        </h1>
-        <p class="lead">
-          A Python application to generate QR Code
-        </p>
-        <hr class="my-4" />
-        <p>
-          Check out the source code at
-          <a href="https://github.com/zehengl/ez-qrcode-generator">GitHub</a>
-        </p>
-      </div>
+<div style="display: flex; min-height: 100vh; flex-direction: column; flex: 1">
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">
+        <span>
+          <img
+            src="{{ url_for('static', filename='favicon.png') }}"
+            width="64"
+            height="64"
+          />
+        </span>
+        ez-qrcode-generator
+      </h1>
+      <p class="lead">A Python application to generate QR Code</p>
+      <hr class="my-4" />
+      <p>
+        Check out the source code at
+        <a href="https://github.com/zehengl/ez-qrcode-generator">GitHub</a>
+      </p>
     </div>
-    <div class="container">
-      {% include 'text_input.html' %}
-    </div>
-    {% if img_bytes %}
-      <div class="container">
-        <img src="data:image/png;base64,{{ img_bytes }}" class="mx-auto d-block" />
-      </div>
-    {% endif %}
   </div>
-  <footer class="footer" style="padding: 1rem">
-    <div class="container">
-      <span class="text-muted"> &copy; Copyright 2019 by Zeheng Li</span>
-    </div>
-  </footer>
+  <div class="container">{% include 'text_input.html' %}</div>
+  {% if img_bytes %}
+  <div class="container">
+    <img src="data:image/png;base64,{{ img_bytes }}" class="mx-auto d-block" />
+  </div>
+  {% endif %}
+</div>
+<footer class="footer" style="padding: 1rem">
+  <div class="container">
+    <span class="text-muted"> &copy; Copyright 2019 by Zeheng Li</span>
+  </div>
+</footer>
 {% endblock %}
