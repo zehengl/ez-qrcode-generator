@@ -17,7 +17,7 @@ A Python application to generate QR Code
 
     python -m venv venv
     .\venv\Scripts\activate
-    python -m pip install -U pip setuptools
+    python -m pip install -U pip
     pip install -r requirements.txt
 
 Use `pip install -r requirements-dev.txt` for development.
