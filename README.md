@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://raw.githubusercontent.com/zehengl/ez-qrcode-generator/master/static/favicon.png" alt="logo" height="196">
+    <img src="https://raw.githubusercontent.com/zehengl/ez-qrcode-generator/master/static/favicon.png" alt="logo" height="128">
 </div>
 
 # ez-qrcode-generator
