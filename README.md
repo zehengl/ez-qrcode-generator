@@ -20,5 +20,4 @@ A Python application to generate QR Code
     python -m pip install -U pip
     pip install -r requirements.txt
 
-Use `pip install -r requirements-dev.txt` for development.
-It will install `pylint` and `black` to enable linting and auto-formatting.
+> Use `pip install -r requirements-dev.txt` for development.
